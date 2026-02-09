@@ -1,9 +1,10 @@
 <?php
 /**
  * Plugin Name: WC Multi-Fabric Master Tool
- * Description: Safely adds/removes fabric variations, force-cleans attribute values, and tracks totals.
- * Author: Muhammed Vellato
+ * Description: Safely adds/removes variations, force-cleans attribute values, and tracks totals.
+ * Author: SVM
  * Version: 7.0
+ * License: MIT
  */
 
 if (!defined('ABSPATH'))
@@ -165,4 +166,5 @@ function vc_run_deep_cleanup($product_id, $fabric_slug)
 // 5. Performance Threshold
 add_filter('woocommerce_ajax_variation_threshold', function () {
     return 1000;
+
 }, 10);
